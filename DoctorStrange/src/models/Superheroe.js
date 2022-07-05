@@ -1,0 +1,65 @@
+import { Schema,model } from "mongoose";
+const superheroeSchema=new Schema({
+    alias:{
+        type:String,
+        required:true,
+        trim:true
+    },
+    id:{
+        type:Number,
+        required:true,
+        trim:true
+    },
+    is:{
+        type:String,
+        required:true,
+        trim:true
+    },
+    origen:{
+        type:String,
+        required:true,
+        trim:true
+    },
+    afilicacion:{
+        type:String,
+        required:true,
+        trim:true
+    },
+    inteligencia:{
+        type:Number,
+        required:true,
+        trim:true
+    },
+    fuerza:{
+        type:Number,
+        required:true,
+        trim:true
+    },
+    velocidad:{
+        type:Number,
+        required:true,
+        trim:true
+    },
+    resistencia:{
+        type:Number,
+        required:true,
+        trim:true
+    },
+    proyeccionDeEnergia:{
+        type:Number,
+        required:true,
+        trim:true
+    },
+    habilidadLucha:{
+        type:Number,
+        required:true,
+        trim:true
+    },
+    raza:{
+        type:String,
+        required:true,
+        trim:true
+    }
+   
+});
+export default model('Superheroe',superheroeSchema);

@@ -1,0 +1,66 @@
+<!--!>
+    <h1>Menú</h1>
+
+    <ul>
+    <li><a href="/">Información</a></li>
+    <li><a href="/formUser">Crear usuario</a></li>
+    <li><a href="/formSuperheroe">Crear personaje</a></li>
+    <li><a href="/formEscenario">Crear escenario</a></li>
+    <li><a href="/personajes">Personajes</a></li>
+    </ul>
+    <-->
+<nav
+  class="navbar navbar-expand-lg navbar-light"
+  style="background-color: #121b69;"
+>
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            href="/inicio"
+            style="color: blanchedalmond;"
+          >INICIO</a>
+        </li>
+        <!--
+        <li class="nav-item">
+          <a class="nav-link" href="/index" style="color: blanchedalmond;">INFORMACION</a>
+        </li>
+        -->
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            href="/personajes"
+            style="color: blanchedalmond;"
+          >PERSONAJES</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            id="navbarDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            style="color: blanchedalmond;"
+          >
+            CREAR
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="/formUser">Usuario</a></li>
+            <li><a
+                class="dropdown-item"
+                href="formSuperheroe"
+              >Personaje</a></li>
+            <li><a
+                class="dropdown-item"
+                href="/formEscenario"
+              >Escenario</a></li>
+          </ul>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
