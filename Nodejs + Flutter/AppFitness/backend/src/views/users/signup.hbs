@@ -1,0 +1,49 @@
+<link rel="stylesheet" href="main.css">
+<div class="container p-4"></div>
+  <div class="row ">
+
+    <div class="col-md4 mx-auto">
+        <div class="card md-6 offset-md-3" style="margin-right: 40%;">
+            <div class="card-header">
+                Registrar cuenta
+            </div>
+            <img src="/img/logo.png" class="rounden-circle mx-auto d-block m-4 logo" alt="Logo">
+            <div class="card-body" >
+                <form action="/users/signup" method="post">
+                    <div class="form-group">
+                        <input type="text"class="form-control" name="nombre" placeholder="Nombre"
+                        value="{{nombre}}">
+                        
+                    </div>
+                     <div class="form-group">
+                        <input type="email"class="form-control" name="email" placeholder="Email"
+                        value="{{email}}"
+                        >
+                    </div>
+                     <div class="form-group">
+                        <input type="password"class="form-control" name="password" placeholder="Contraseña"
+                        value="{{password}}"
+                        >
+                    </div>
+                     <div class="form-group">
+                        <input type="password"class="form-control" name="confirm_password" placeholder="Repite la Contraseña"
+                        value="{{confirm_password}}"
+                        >
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-block">
+                            Registrar
+
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    
+</div>  
+</div>
+
+

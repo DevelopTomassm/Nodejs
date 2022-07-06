@@ -1,0 +1,74 @@
+<div class="row">
+    {{#each calorias}}
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title d-flex justify-content-between align-items-center">
+                    Creado:
+                    
+                    
+                </h3>
+                <p>
+                    
+                    {{date}}
+                </p>
+                 <h4 class="card-title d-flex justify-content-between align-items-center">
+                    TMB:
+                    
+                    
+                </h4>
+                <p>
+                    
+                    {{TMB}}
+                </p>
+                 <h4 class="card-title d-flex justify-content-between align-items-center">
+                    Calorias de mantenimiento:
+                    
+                    
+                </h4>
+                <p>
+                    
+                    {{caloriasDeMantenimiento}}
+                </p>
+                 <h4 class="card-title d-flex justify-content-between align-items-center">
+                    Calorias de definicion:
+                    
+                    
+                </h4>
+                <p>
+                    
+                    {{caloriasDeDefinicion}}
+                </p>
+                 <h4 class="card-title d-flex justify-content-between align-items-center">
+                    Calorias de volumen:
+                    
+                    
+                </h4>
+                <p>
+                    
+                    {{caloriasDeVolumen}}
+                </p>
+                
+                
+            </div>
+
+
+        </div>
+    </div>
+    {{else}}
+    <div class="card mx-auto">
+        <div class="card-body">
+            <h1>
+                Bienvenid@ {{user.nombre}}
+
+            </h1>
+            <p class="lead">
+                No existen datos de tus calorias ahora mismo
+                
+            </p>
+            <a href="/calcularCalorias" class="btn btn-success btn-block">Calcular calorias</a>
+
+        </div>
+    </div>
+    {{/each}}
+</div>

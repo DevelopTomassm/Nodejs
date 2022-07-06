@@ -1,0 +1,47 @@
+<div class="row">
+    {{#each rutinas}}
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title d-flex justify-content-between align-items-center">
+                    {{nombre}} 
+                    <a href="/rutinas/edit/{{_id}}">
+                    <i class="fas fa-edit">
+
+                    </i>
+
+                    </a>
+                </h4>
+                <p>
+                    {{descripcion}}
+                </p>
+                <form action="/rutinas/delete/{{_id}}?_method=DELETE" method="post">
+                <input type="hidden" name="_method" value="DELETE">
+               <button class="btn btn-danger btn-block btn-sm " type="submit">
+                    Borrar
+                </button>
+                </form>
+                
+            </div>
+
+
+        </div>
+    </div>
+    {{else}}
+    <div class="card mx-auto">
+        <div class="card-body">
+            <h1>
+                Bienvenid@ {{user.nombre}}
+
+            </h1>
+          
+            <p class="lead">
+                No existen rutinas ahora mismo
+                
+            </p>
+            <a href="/rutinas/add" class="btn btn-success btn-block">Crear rutina</a>
+
+        </div>
+    </div>
+    {{/each}}
+</div>

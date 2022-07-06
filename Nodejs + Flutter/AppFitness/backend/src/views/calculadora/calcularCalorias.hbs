@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calcular calorias diarias</title>
+  <link href="css/style.css" rel="stylesheet" />
+  
+</head>
+<body>
+   <div class="container-fluid">
+      <header>
+         <img src="/img/logo.png" class="rounden-circle mx-auto d-block m-4 logo"  />
+      </header>
+
+      <div class="content">
+         <form id="form" action="/calorias/obtener-calorias" method="post">
+            <div class="form-group">
+               <label for="gender">Escoja su sexo</label>
+               <select id="gender" name="sexo" name="sexo">
+                  <option value="male">Masculino</option>
+                  <option value="female">Feminino</option>
+               </select>
+            </div>
+            <div class="form-group">
+               <label for="age">Introduzca su edad</label>
+               <input type="number" id="age" required name="edad" value="{{edad}}"/>
+            </div>
+            <div class="form-group">
+               <label for="weight">Introduzca su peso</label>
+               <input type="number" id="weight" required name="peso" value="{{peso}}"/>
+            </div>
+            <div class="form-group">
+               <label for="height">Introduzca su altura</label>
+               <input type="number" id="height" required name="altura" value="{{altura}}"/>
+            </div>
+            <div class="form-group">
+               <label for="activity_level">Elija su nível de actividad física</label>
+               <select id="activity_level" name="actividad">
+                  <option value="1.2">Sedentario</option>
+                  <option value="1.375">Poca actividad</option>
+                  <option value="1.55">Actividad moderada</option>
+                  <option value="1.725">Actividad intensa</option>
+                  <option value="1.9">Activiad muy intensa</option>
+               </select>
+            </div>
+            <div class="form-group">
+               <button type="submit">Calcular!</button>
+            </div>
+         </form>
+
+
+  
+         
+
+  
+   
+      </div>
+   </div>
+   
+   
+   
+</body>
+</html>
